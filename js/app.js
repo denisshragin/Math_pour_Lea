@@ -3,7 +3,7 @@
 // To add a new exercise: add a line here.
 //   file   : the .md file in exercises/
 //   title  : name shown on the home page
-//   theme  : home | pasta | violin | piano | cats  (see style.css)
+//   theme  : home | pasta | violin | piano | cats | beach | electric  (see style.css)
 //   icon   : emoji shown on the home page card
 //   dancer : emoji that dances when an answer is right (optional)
 // ------------------------------------------------------------
@@ -11,7 +11,9 @@ const EXERCISES = [
     { file: 'problems-pates.md',  title: 'Les pâtes de Camilla',  theme: 'pasta',  icon: '🍝', dancer: '👩‍🍳' },
     { file: 'problems-violon.md', title: 'Le violon de Camila',   theme: 'violin', icon: '🎻', dancer: '🎶' },
     { file: 'problems-piano.md',  title: 'Le piano de Fabiola',   theme: 'piano',  icon: '🎹', dancer: '🎵' },
-    { file: 'problems-chats.md',  title: 'Les chats de Fabiola',  theme: 'cats',   icon: '🐱', dancer: '😺' }
+    { file: 'problems-chats.md',  title: 'Les chats de Fabiola',  theme: 'cats',   icon: '🐱', dancer: '😺' },
+    { file: 'problems-plage.md',       title: 'Les vacances de Lea',    theme: 'beach',    icon: '🏖️', dancer: '🌴' },
+    { file: 'problems-electricite.md', title: "L'électricité de Ramon", theme: 'electric', icon: '⚡', dancer: '💡' }
 ];
 
 const DEFAULT_THEME = 'home';

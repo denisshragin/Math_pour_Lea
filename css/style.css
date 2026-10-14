@@ -74,6 +74,30 @@
     --ink: #3b2412;
 }
 
+/* Lea : vacances à la plage au Venezuela */
+[data-theme="beach"] {
+    --bg: #1fb6d0;
+    --title: #0b6e82;
+    --accent: #ffb703;
+    --btn: #0b7285;
+    --cta: #c2410c;
+    --soft: #e8f9fc;
+    --panel: #f3fcfd;
+    --ink: #0b3c49;
+}
+
+/* Ramon : transformateurs et électricité */
+[data-theme="electric"] {
+    --bg: #0b1320;
+    --title: #0a4a8a;
+    --accent: #ffd400;
+    --btn: #0a58a8;
+    --cta: #6d28d9;
+    --soft: #eef4ff;
+    --panel: #f4f8ff;
+    --ink: #0b1320;
+}
+
 /* ==========================================================
    PAGE BACKGROUNDS (decoration lives only behind the card)
    ========================================================== */
@@ -131,6 +155,29 @@ body[data-theme="piano"] {
 body[data-theme="cats"] {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><g fill='%23b45309' fill-opacity='.3'><g transform='translate(45 55) rotate(-20)'><ellipse cy='6' rx='13' ry='10'/><ellipse cx='-14' cy='-8' rx='5' ry='7'/><ellipse cx='-5' cy='-16' rx='5' ry='7'/><ellipse cx='6' cy='-16' rx='5' ry='7'/><ellipse cx='15' cy='-8' rx='5' ry='7'/></g><g transform='translate(115 125) rotate(20) scale(.8)'><ellipse cy='6' rx='13' ry='10'/><ellipse cx='-14' cy='-8' rx='5' ry='7'/><ellipse cx='-5' cy='-16' rx='5' ry='7'/><ellipse cx='6' cy='-16' rx='5' ry='7'/><ellipse cx='15' cy='-8' rx='5' ry='7'/></g></g></svg>");
     background-size: 160px 160px;
+}
+
+/* Plage : ciel, mer turquoise, sable, soleil, vagues et palmier */
+body[data-theme="beach"] {
+    background-image:
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='320'><path d='M100 320C104 250 112 190 130 120' fill='none' stroke='%235b3a1a' stroke-width='14' stroke-linecap='round'/><g transform='translate(130 120)' fill='%232f7a4b' fill-opacity='.9'><ellipse rx='55' ry='9' transform='rotate(-160) translate(55 0)'/><ellipse rx='55' ry='9' transform='rotate(-120) translate(55 0)'/><ellipse rx='55' ry='9' transform='rotate(-80) translate(55 0)'/><ellipse rx='55' ry='9' transform='rotate(-40) translate(55 0)'/><ellipse rx='55' ry='9' transform='rotate(0) translate(55 0)'/><ellipse rx='55' ry='9' transform='rotate(30) translate(55 0)'/><circle cx='-6' cy='8' r='6' fill='%235b3a1a'/><circle cx='6' cy='8' r='6' fill='%235b3a1a'/></g></svg>"),
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='50'><path d='M0 25q15 -12 30 0t30 0t30 0t30 0' fill='none' stroke='white' stroke-opacity='.3' stroke-width='3'/></svg>"),
+        radial-gradient(circle at 92% 8%, #fff3b0 0, #fff3b0 36px, rgba(255, 243, 176, 0) 130px),
+        linear-gradient(180deg, #bfeaff 0%, #8fdcff 30%, #1fb6d0 30%, #17a2bf 70%, #f4dca0 70%, #f0d28b 100%);
+    background-repeat: no-repeat, repeat, no-repeat, no-repeat;
+    background-position: left bottom, 0 0, center, center;
+    background-size: 220px 320px, 120px 50px, auto, auto;
+    background-attachment: fixed, scroll, fixed, fixed;
+}
+
+/* Électricité : circuit imprimé, éclairs et résistances */
+body[data-theme="electric"] {
+    background-image:
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><g fill='none' stroke='%2322d3ee' stroke-opacity='.4' stroke-width='2'><path d='M0 60H70V120H140V180H240'/><path d='M0 200H40V150'/><path d='M180 0V50H240'/></g><g fill='%2322d3ee' fill-opacity='.6'><circle cx='70' cy='60' r='4'/><circle cx='140' cy='120' r='4'/><circle cx='40' cy='150' r='4'/><circle cx='180' cy='50' r='4'/></g><path d='M160 90h10l4 -10l8 20l8 -20l8 20l4 -10h10' fill='none' stroke='%23ffd400' stroke-opacity='.5' stroke-width='2'/><path d='M52 140L30 180H46L38 214L70 168H52L64 140Z' fill='%23ffd400' fill-opacity='.45'/></svg>"),
+        radial-gradient(ellipse at top, #16233b 0%, #070b14 75%);
+    background-repeat: repeat, no-repeat;
+    background-size: 240px 240px, cover;
+    background-attachment: scroll, fixed;
 }
 
 /* ==========================================================
